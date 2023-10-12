@@ -116,7 +116,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 412px) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
