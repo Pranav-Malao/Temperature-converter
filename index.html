@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div></div>
+    <div class="container">
+        <div class="title">
+            <h1>Temperature Converter</h1>
+        </div>
+        <div class="celcius" id="celcius">
+            <input class="input" type="number" placeholder="Celcius" id="cel" oninput="toggleLabels()">
+            <label for="cel" class="label">Celcius</label>
+        </div>
+
+        <div class="fahrenheit" id="fahrenheit">
+            <input class="input" type="number" placeholder="Fahrenheit" id="fah" oninput="toggleLabels()">
+            <label for="fah" class="label">Fahrenheit</label>
+        </div>
+
+        <div class="kelvin" id="kelvin">
+            <input class="input" type="number" placeholder="Kelvin" id="kel" oninput="toggleLabels()">
+            <label for="kel" class="label">Kelvin</label>
+        </div>
+        <button class="clear" onclick="clearInputs()">clear</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80 -->
+
+<!-- https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1834&q=80 -->
+
+<!-- https://images.unsplash.com/photo-1554147090-e1221a04a025?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80 -->
+
+<!-- https://images.unsplash.com/photo-1502790671504-542ad42d5189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80 -->

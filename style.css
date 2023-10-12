@@ -1,0 +1,150 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1834&q=80);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    user-select: none;
+
+    border: 1px dashed;
+    border-radius: 2em;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 6em);
+    justify-items: center;
+    align-items: center;
+}
+
+.input {
+    height: 3em;
+    width: 12em;
+    border-radius: 1em;
+    border-style: solid;
+
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+label {
+    display: none;
+
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 0.3em 0;
+    color: rgb(244, 244, 248);
+    transition: display 0.5s ease-in-out;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease;
+}
+input:focus {
+    outline: none;
+}
+
+.celcius {
+    margin: 0 1em;
+    border: 0.1em dotted white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fahrenheit {
+    margin: 0 1em;
+    border: 0.1em dotted white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kelvin {
+    margin: 0 1em;
+    border: 0.1em dotted white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input::placeholder {
+    text-align: center;
+}
+
+button {
+    height: 2em;
+    border-radius: 1em;
+}
+
+.title {
+    font-size: larger;
+    text-align: center;
+    grid-column: span 3;
+    margin: 0;
+    padding: 1em;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.clear {
+    height: 3em;
+    width: 8em;
+    border-radius: 2em;
+    grid-row: 3;
+    grid-column: 2;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width: 850px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 6em);
+    }
+
+    .title {
+        grid-row: 1;
+    }
+
+    .celcius {
+        grid-row: 2;
+    }
+
+    .fahrenheit {
+        grid-row: 3;
+    }
+
+    .kelvin {
+        grid-row: 4;
+    }
+
+    .clear {
+        grid-row: 5;
+    }
+
+    .clear {
+        grid-row: 5;
+        grid-column: 1;
+    }
+}
