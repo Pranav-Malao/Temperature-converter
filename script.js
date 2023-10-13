@@ -42,9 +42,6 @@ function toggleLabels() {
             label.style.display = 'block';
             label.style.maxHeight = label.scrollHeight + "px";
         }
-        // else{
-        //     label.style.maxHeight = 0;
-        // }
     });
 }
 
